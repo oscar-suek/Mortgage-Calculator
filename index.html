@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+</head>
+<body>
+  <div id="main">
+    <div id="first-div">
+      <div id="fd1">
+        <div id="fd1a">Mortgage Calculator</div>
+        <div id="fd1b">Clear All</div>
+      </div>
+      <div id="fd2">
+        <div id="fd2a">Mortgage Amount</div>
+        <div id="ssa">
+          <div id="ass">&pound;</div>
+          <input type="number" id="in1">
+        </div>
+        <div id="err1">This field is required</div>
+      </div>
+      <div id="fd3">
+        <div>
+          <div id="fd3a">Mortgage Term</div>
+          <div id="zza">
+            <input type="number" id="in2" autocomplete="off">
+            <div id="azz">years</div>
+          </div>
+          <div id="err2">This field is required</div>
+        </div>
+        <div>
+          <div id="fd3b">Interest Rate</div>
+          <div id="zzb">
+            <input type="number" id="in3" autocomplete="off">
+            <div id="bzz">%</div>
+          </div>
+          <div id="err3">This field is required</div>
+        </div>
+      </div>
+      <div id="fd4">
+        <div id="fd4a">Mortgage Type</div>
+        <div id="fd4b">
+          <input type="radio" name="chk" value="rep" id="ch1">
+          <label for="rep">Repayment</label>
+        </div>
+        <div id="fd4c">
+          <input type="radio" name="chk" value="int" id="ch2">
+          <label for="int">Interest Only</label>
+        </div>
+        <div id="err4">This field is required</div>
+      </div>
+      <div id="fd5">
+        <button id="b1"><img src="./assets/images/icon-calculator.svg" width="20px" height="20px" id="img1"> Calculate Repayments</button>
+      </div>
+      <br>
+    </div>
+    <div id="second-div">
+      <div id="ld1">
+        <img src="./assets/images/illustration-empty.svg" width="160px" height="210px">
+        <div id="sd1">Results shown here</div>
+        <div id="sd2">Complete the form and click “calculate repayments” to see what your monthly repayments would be.</div>
+      </div>
+      <div id="ld2">
+        <div id="l1">Your Results</div>
+        <div id="l2">Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</div>
+        <div id="l3">
+          <div id="l3a">Your Monthly Repayments</div>
+          <div id="l3b">&pound;<span id="span1">1,234.56</span></div><hr>
+          <div id="l3c">Total you'll repay over the term</div>
+          <div id="l3d">&pound;<span id="span2">200,000.98</span></div><br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
